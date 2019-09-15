@@ -1,0 +1,3 @@
+To Compile the Program
+
+gcc actionCBFunctions.c PahoMqttClientTest.c -lpaho-mqtt3c
