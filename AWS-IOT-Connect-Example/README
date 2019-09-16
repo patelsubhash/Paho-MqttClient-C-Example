@@ -1,0 +1,21 @@
+Introduction:
+
+This program shows how to connect with AWS-IOT server (AWS-IOT Thing) using the Paho-mqtt-C-client library. There is an AWS-IOT-SDK available for this purpose. But this is alternative to this.
+
+
+To Compile the Program
+
+gcc actionCBFunctions.c AWS-IOT-Connect.c -lpaho-mqtt3cs
+
+Requirements:
+
+1. You need to create a AWS-IOT things on AWS Cloud and need to download the certificates attached to the things.
+2. Following three certificates are needed to establish the connection
+   - Client certificate
+   - Client's private key
+   - Root certificate of the AWS
+3. Do following changes in AWS-IOT-Connect.c
+   - Change/Add the end-point of the AWS-Thing
+   - Change/Add paths of Client certificate, Client Key and Root certificate
+   - Certificate must have PEM format
+
