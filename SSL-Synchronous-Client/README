@@ -1,0 +1,5 @@
+To Compile the Program
+
+gcc actionCBFunctions.c PahoMqttClient-SSL.c -lpaho-mqtt3cs
+
+Note : Certification validation is not carried out
