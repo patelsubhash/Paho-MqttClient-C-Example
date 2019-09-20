@@ -148,7 +148,7 @@ int main()
 	MQTTClient_SSLOptions ssl_opts = MQTTClient_SSLOptions_initializer;
 
 	ssl_opts.verify = 1;
-	ssl_opts.CApath = ROOTCA;
+	ssl_opts.trustStore = ROOTCA;
 	ssl_opts.privateKey = PRIVATEKEY;
 	ssl_opts.keyStore = CLIENTCERT;
 	conn_opts.ssl = &ssl_opts;
